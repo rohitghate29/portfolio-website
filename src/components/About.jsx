@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import about from "./../assets/about.jpg";
 import { ABOUT_TEXT } from "../constants/data";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
