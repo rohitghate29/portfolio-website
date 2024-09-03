@@ -3,6 +3,7 @@ import { PROJECTS } from "./../constants/data";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
+import { FaLink } from "react-icons/fa";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -45,7 +46,9 @@ function Projects() {
             </div>
             <div className="w-full max-w-xl lg:w-3/4">
               <a href={item.link} target="_blank">
-                <h6 className="mb-2 font-semibold">{item.title}</h6>
+                <span className="flex items-center mb-2 font-semibold">
+                  {item.title} <FaLink className="ml-2" />
+                </span>
               </a>
               <p className="mb-4 text-neutral-400">{item.description}</p>
               {item.technologies.map((tech, index) => (
